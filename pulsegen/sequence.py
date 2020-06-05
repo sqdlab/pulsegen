@@ -477,7 +477,7 @@ class MultiAWGSequence(object):
                 pulse_train, self._channel_pair_cfgs[chpair], chpair=True)
           
         else:
-            ValueError("Either of `chpair` and `ch` must be specified")
+            raise ValueError("Either of `chpair` and `ch` must be specified")
           
         return pulse_list
     
